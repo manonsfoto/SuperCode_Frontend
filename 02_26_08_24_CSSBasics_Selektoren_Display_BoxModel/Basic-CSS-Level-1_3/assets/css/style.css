@@ -1,0 +1,12 @@
+a{
+    color: rgb(198, 44, 108);
+    background-color: azure;
+    display: block;
+    padding-left: 50px;
+}
+span{
+    color: blueviolet;
+}
+div{
+    color: green;
+}

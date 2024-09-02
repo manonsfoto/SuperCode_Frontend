@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    /* von Steffil Tag02
+    Verbindung zwischen Zeil 54 und Zeile 10 durch ID Vergebung Sprung zum Anfang der Seite  */
+}
+
+@font-face {
+    font-family: "DidactGothic";
+    src: url(../fonts/DidactGothic-Regular.ttf);
+}
+@font-face {
+    font-family: "FjallaOne";
+    src: url(../fonts/FjallaOne-Regular.ttf);
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url(../fonts/WorkSans-Regular.ttf);
+}
+
+/* Farben 
+#9e9e9e
+#fff
+#000
+#333
+#666 */
+
+body{
+    width: 1440px;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    color: #000;
+}
+
+header p{
+    margin-top: 7px;
+    font-family: "WorkSans";
+    font-size: 1.25rem;
+    font-weight: lighter;
+}
+
+h1{
+    width: 500px;
+    margin: 50px auto;
+    overflow-wrap: break-word;
+    font-family:  "DidactGothic";
+    font-size: 5em;
+    font-weight: lighter;
+}
+
+header h2{
+    margin: 6rem auto;
+    font-family: "WorkSans";
+    font-size: 7.5em;
+    font-weight: lighter;
+}
+
+.black {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8em;
+    line-height: 7em;
+}
+
+.yearlight{
+    color: #9e9e9e;
+    font-family: "WorkSans" ;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.h3light{
+    font-family: "DidactGothic";
+    color:#fff;
+    font-size: 6em;
+    font-weight: lighter;
+}
+
+.btnlight{
+    border: 2px solid #9e9e9e;
+    padding: 13px 20px;
+    font-family:"FjallaOne";
+    color: #fff;
+    opacity: 0.8;
+    background: none;
+    cursor: pointer;
+}
+
+.numberlight{
+    text-align: right;
+    color: #9e9e9e;
+    font-family: "FjallaOne";
+    font-size: 9em;
+    font-weight: lighter;
+    opacity: 0.3;
+    margin-top: 0.6em;
+}
+
+.section1 {
+    background-image: url(./../img/portfolio2.jpg); 
+    background-attachment:fixed;
+    /* To Create a Parallax Scrolling Effect  background-attachment:fixed; */
+}
+.section3 {
+    background-image: url(./../img/portfolio4.jpg);
+    background-attachment:fixed;
+}
+
+.section2 {
+    background-image: url(./../img/portfolio3.png);
+    background-attachment:fixed;
+}
+.section4 {
+    background-image: url(./../img/portfolio5.png);
+    background-attachment:fixed;
+}
+
+.white{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8em;
+    line-height: 7em;
+}
+
+.yeardark{
+    color: #666;
+    font-family: "WorkSans" ;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.h3dark{
+    font-family: "DidactGothic";
+    color:#000;
+    font-size: 6em;
+    font-weight: lighter;
+}
+
+.btndark{
+    border: 2px solid #000;
+    padding: 13px 20px;
+    font-family:"FjallaOne";
+    color: #000;
+    opacity: 0.8;
+    background: none;
+    cursor: pointer;
+}
+
+.numberdark{
+    text-align: right;
+    color: #666;
+    font-family: "FjallaOne";
+    font-size: 9em;
+    font-weight: lighter;
+    opacity: 0.8;
+    margin-top: 0.6em;
+}
+
+.section5{
+    background-color: #000;
+    padding: 8em;
+    font-weight: lighter;
+}
+
+.section5h2{
+    color: #fff;
+    font-family: "WorkSans";
+    font-size: 8em;
+    text-align: center;
+}
+
+.section5p{
+    color: #666;
+    font-family: "WorkSans";
+    font-size: 20px;
+    padding-left: 45%;
+    padding-top: 9em;
+}
+
+.section5email{
+    color: #fff;
+    font-family: "WorkSans";
+    font-size: 4em;
+    padding-left: 45%;
+    padding-top: 1.3em;
+}
+
+footer{
+    text-align: center;
+}
+
+a{
+    font-family: "DidactGothic";
+    color: #000;
+    font-size: 7.5em;
+    text-decoration: none;
+}
+
+footer p{
+    padding-top: 10em;
+}
+
+.heart{
+    margin-bottom: 5em;
+}
+
+a:hover{
+    text-decoration: underline;
+    }
+    
+.btnlight:hover{
+    background-color: #fff;
+    color: #000;
+    border: #fff;
+}
+
+.btnlight:hover~.numberlight{
+    color: #9e9e9e;
+    opacity: 1;
+}
+
+.btndark:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* CSS Combinators */
+.btndark:hover~.numberdark{
+    color: #000;
+    opacity: 1;
+}
+
+.heart{
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);}
+}

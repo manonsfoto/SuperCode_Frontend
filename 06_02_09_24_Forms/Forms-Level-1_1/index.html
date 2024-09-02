@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Forms1_1</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+
+            <section class="name">
+                <label class="redstar" for="name">Name</label><br>
+                <input type="text" name="" id="name" placeholder="Vorname" required>
+                <input type="text" name="" id="name" placeholder="Nachname" required>
+            </section>
+
+            <section class="mail">
+                <label class="redstar" for="mail">Email</label><br>
+                <input type="email" name="" id="mail" required>
+            </section>
+
+            <section class="thema">
+                <label for="thema">Thema</label><br>
+                <select name="Thema" id="thema" required> 
+                        <option value="gn">General</option>
+                        <option value="at" selected>Advertise</option>
+                        <option value="ps">Partnership</option>
+                        <option value="nr">Nachricht</option>
+                </select>
+            </section>
+
+            <section class="nachricht">
+                <label for="nachricht"class="redstar">Nachricht</label>
+                <textarea name="" id="nachricht" cols="30" rows="10" ></textarea>
+            </section>
+
+            <section class="submit">
+                <input type="submit" value="Submit">
+            </section>
+        </fieldset>
+    </form>
+</body>
+</html>

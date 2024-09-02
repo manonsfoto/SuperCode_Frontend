@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Forms2_3</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Register form</legend>
+
+            <section class="name">
+                <label for="name">Name</label>
+                <input type="text" name="" id="name" placeholder="Name" class="square">
+            </section>
+
+            <section class="surname">
+                <label for="surname">Surname</label>
+                <input type="text" name="" id="surname" placeholder="Surname" class="square">
+            </section>
+
+            <section class="mail">
+                <label for="mail">Email</label>
+                <input type="email" name="" id="mail"placeholder="Email" class="square">
+            </section>
+
+            <section >
+                <label for="Gender">Gender</label>
+                <div class="Gender">
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="Male" checked>
+
+                <label for="Female">Female</label>
+                <input type="radio" name="Gender" id="Female">
+                </div>
+            </section>
+        
+            <section class="file">
+                <label for="file">Picture</label>
+                <input type="file" id="file">
+                
+            </section>
+
+            <section class="Country">
+                <label for="Country">Country</label>
+                <select name="Country" id="Country"> 
+                        <option value="gm">Germany</option>
+                        <option value="fr">France</option>
+                        <option value="us">USA</option>
+                </select>
+            </section>
+
+            <section class="Preferred_languages">
+                <label for="Preferred_languages">Preferred languages</label>
+                <select name="Preferred_languages" id="Preferred_languages" multiple size="4" class="webkit"> 
+                        <option value="hl">HTML</option>
+                        <option value="cs">Css</option>
+                        <option value="js">JS</option>
+                        <option value="ra">React</option>
+                </select>
+                <span class="cmd">(To choose more than one use cmd key)</span>
+            </section>
+
+            <!-- checkbox -->  
+            <section class="field">
+                <label for="checkbox">Field of activity</label>
+                <span class="check">
+                    <input type="checkbox" name="" id="IT" value="IT">
+                    <label for="IT">IT</label>
+            
+                    <input type="checkbox" name="" id="Design" value="Design">
+                    <label for="Design">Design</label>
+            
+                    <input type="checkbox" name="" id="Other" value="Other">
+                    <label for="Other">Other</label>
+                </span>
+            </section>
+
+            <section class="button">
+                <input type="submit" value="Send">
+                <input type="button" value="Cancel">
+            </section>
+
+        </fieldset>
+    </form>
+</body>
+</html>

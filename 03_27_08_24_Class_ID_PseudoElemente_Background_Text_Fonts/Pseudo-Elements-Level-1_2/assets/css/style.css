@@ -1,0 +1,68 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h3::first-letter{
+    color:#00ced1;
+    font-size: 50px;
+}
+h3:hover::first-letter{
+    color: #a020f0;
+}
+li:nth-of-type(1):first-letter{
+    color: #00bfff;
+    font-size: 30px;
+    text-decoration: overline;
+}
+
+li:nth-of-type(2):first-letter{
+    color:#a020f0 ;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+li:nth-of-type(3):first-letter{
+    color: #32cd32;
+    font-size: 30px;
+}
+li:nth-of-type(3){
+    text-decoration:line-through;
+}
+
+p::first-letter{
+    color: #c71585;
+    font-size: 30px;
+}
+
+p::first-line{
+    color: #2e8b57 ;
+}
+p:hover::first-line{
+    color: orange;
+}
+p:nth-of-type(even){
+    font-size: larger;
+}
+
+p:nth-of-type(odd){
+    font-size: smaller;
+}
+p:nth-of-type(1){
+    color: #483d8b;
+    text-indent: 50px;
+}
+p:nth-of-type(1)::first-line{
+    font-size: larger;
+    color: #483d8b;
+}
+p:nth-of-type(1)::first-letter{
+    font-size: larger;
+    color: #483d8b;
+}

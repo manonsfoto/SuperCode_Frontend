@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: yellow;
+    line-height: 150%;
+    text-align: center;
+}
+@font-face {
+    font-family: "Nerko";
+    src: url(../fonts/NerkoOne-Regular.ttf);
+}
+html{
+    overflow: hidden;
+    background-image: url("../img/kevin-oetiker-v17IhTzLICs-unsplash.jpg");
+    background-size: 100vw 100vh ;
+    background-repeat: no-repeat;
+    font-family: "Nerko";
+    font-size: 14px;
+}
+
+main{
+    padding: 5%;
+}
+
+article{
+    padding: 2%;
+    margin: 0 100px;
+    border-radius: 5rem;
+    background-color: rgba(0, 0, 255, 0.528);
+}
+
+
+h1{
+    font-size: 2rem;
+    text-shadow: 2px 2px rgb(187, 135, 235);
+    padding: 0 15%;
+}
+
+h2{
+    font-size: 1.5em;
+}

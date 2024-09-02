@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.pets{
+    border: 3px solid black;
+}
+ul{
+    padding-inline-start: 1.2em;
+}
+li{
+    list-style: none;
+    line-height: 1.5em;
+    font-size: 0.8em;
+
+}
+.dog{
+    font-size: 0.85em;
+    
+}
+.dog li::marker {
+    content: "\1F436";
+}
+.cat{
+    font-size: 0.85em;
+}
+.cat li::marker {
+    content: "\1F431";
+}
+.parrot{
+    font-size: 0.85em;
+}
+.parrot li::marker {
+    content: "\1F99C";
+}
+.snake{
+    font-size: 0.85em;
+}
+.snake li::marker {
+    content: "\1F40D";
+}
+.lizzard{
+    font-size: 0.85em;
+}
+.lizzard li::marker {
+    content: "\1F98E";
+}

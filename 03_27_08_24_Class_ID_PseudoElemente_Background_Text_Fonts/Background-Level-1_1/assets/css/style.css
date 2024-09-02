@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+section{
+    background-color: linen;
+}
+section h1{
+    background-color: lightblue;
+}
+article{
+    background-image: url(../img/samsung-memory-TnwB8XOYaHA-unsplash.jpg);
+    background-size: cover;
+    color: tomato;
+}
