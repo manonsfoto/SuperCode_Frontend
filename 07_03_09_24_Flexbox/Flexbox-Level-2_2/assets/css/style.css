@@ -1,0 +1,49 @@
+html{
+    font-family: "raleway", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@font-face {
+    font-family: "raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* - Font-family: "Raleway"
+- Headerhöhe: 76px
+- Logofarbe: #666
+- Logofarbe in hover: #333
+- Menüfarbe: #333
+- Menüfarbe in hover: #337ab7 */
+
+header, nav{
+    height: 76px;
+    border-bottom: 1px solid gainsboro;
+}
+.logo{
+    color: #666;
+    font-size: 1.5rem;
+}
+.logo:hover{
+    color: #333;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    color: #337ab7;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-right: 15px;
+}
