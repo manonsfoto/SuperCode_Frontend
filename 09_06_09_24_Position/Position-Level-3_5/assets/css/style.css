@@ -104,12 +104,7 @@ h1,
   width: 400px;
   height: 250px;
 }
-.each-box-photos :hover {
-  transition: 0.4s;
-  opacity: 0.6;
-  background-color: #000;
-  cursor: pointer;
-}
+
 img {
   width: 100%;
   height: 100%;
@@ -134,4 +129,32 @@ img {
 .green {
   color: #008000;
   font-weight: 700;
+}
+.each-box-photos :hover {
+  transition: 0.4s;
+
+  cursor: pointer;
+}
+.hover1 :hover {
+  opacity: 0.6;
+  background-color: #000;
+}
+.hover2 :hover {
+  color: #ffee10;
+  box-shadow: 0 0 20px #ffee10;
+}
+.hover3 :hover {
+  border-radius: 30%;
+}
+.hover4 :hover {
+  width: 120%;
+  height: 120%;
+}
+.hover5 :hover {
+  position: relative;
+  top: 7rem;
+}
+.hover6 :hover {
+  position: relative;
+  left: 7rem;
 }
