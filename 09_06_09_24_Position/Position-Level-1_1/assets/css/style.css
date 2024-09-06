@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+html {
+  font-family: "poppins";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(../img/slava-auchynnikau-7P23-H_W5_8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+div {
+  color: #fff;
+  text-align: right;
+  position: relative;
+  right: 25rem;
+  top: 25rem;
+}
+h3 {
+  margin-top: 2rem;
+}
