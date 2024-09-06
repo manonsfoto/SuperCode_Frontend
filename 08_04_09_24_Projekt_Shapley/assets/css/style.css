@@ -13,7 +13,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
+  width: 100%;
 }
 
 h1 {
@@ -29,6 +29,9 @@ h2 {
 
 p {
   line-height: 180%;
+}
+.burger-wrapper {
+  display: none;
 }
 header,
 nav {
@@ -117,19 +120,27 @@ main section div {
   border: 2px solid #745cf9;
 }
 
-.section2 {
+.section2,
+.section3 {
   display: flex;
-  padding: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   align-items: center;
-  gap: 10rem;
+  gap: 3rem;
   justify-content: center;
 }
 
-.section2 div {
+.section3 {
+  flex-direction: row-reverse;
+  background-color: #f5f5f5;
+}
+.section2 div,
+.section3 div {
   display: flex;
   flex-direction: column;
-  width: 25rem;
+  width: 24rem;
   justify-content: center;
+  margin: 0 2rem;
 }
 
 .section2 h2,
@@ -148,35 +159,22 @@ main section div {
   color: #8c979e;
 }
 
-.section3 {
-  display: flex;
-  padding: 10rem;
-  align-items: center;
-  gap: 10rem;
-  justify-content: center;
-  flex-direction: row-reverse;
-  background-color: #f5f5f5;
-}
-
-.section3 div {
-  display: flex;
-  flex-direction: column;
-  width: 25rem;
-  justify-content: center;
-}
-
 .section4 {
   background: url(../img/section4.png) no-repeat center;
   background-size: cover;
   height: 450px;
   background-attachment: fixed;
-}
-.section4 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10rem;
+}
+.section4 div,
+.section5 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section4 p {
@@ -191,13 +189,6 @@ main section div {
   row-gap: 2rem;
   padding-top: 7rem;
 }
-.section5 div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50rem;
-  align-items: center;
-}
 
 .section5 p {
   text-align: center;
@@ -210,7 +201,7 @@ main section div {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  padding-top: 7rem;
+  padding: 7rem 0 0 0;
 }
 
 .section6_title {
@@ -231,6 +222,7 @@ main section div {
 .gallery article a {
   height: 420px;
   width: 620px;
+  overflow: hidden;
 }
 .gallery img {
   width: 100%;
@@ -256,9 +248,10 @@ main section div {
 }
 .section7 div {
   display: flex;
-  width: 60rem;
   gap: 2rem;
+  width: 70rem;
   align-items: center;
+  justify-content: center;
   margin-top: 2rem;
 }
 

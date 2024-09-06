@@ -1,0 +1,55 @@
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  .section2,
+  .section3 {
+    flex-direction: column;
+  }
+  .section2 img,
+  .section3 img {
+    width: 100%;
+  }
+  .section3 div {
+    order: 1;
+  }
+  .section3 img {
+    order: 2;
+  }
+  .section5 img {
+    width: 100%;
+  }
+  .section7 a {
+    display: none;
+  }
+  .section2 div,
+  .section3 div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 2rem;
+  }
+  .section7 div {
+    width: 100%;
+  }
+
+  .section9 {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .section9 h2,
+  .section9 a {
+    width: 100%;
+    text-align: center;
+  }
+}

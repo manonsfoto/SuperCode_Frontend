@@ -1,0 +1,32 @@
+@media only screen and (max-width: 991px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav ul {
+    display: none;
+  }
+  .burger-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .burger {
+    background-color: #3a52bf;
+    height: 2px;
+    width: 13px;
+    margin: 1px;
+    border-radius: 5px;
+  }
+
+  .section2 > img,
+  .section3 > img {
+    width: 60%;
+  }
+  .section5 img {
+    width: 80%;
+  }
+  .section7 div {
+    width: 60rem;
+  }
+}
