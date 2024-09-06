@@ -1,49 +1,137 @@
-html{
-    font-family: "raleway", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 @font-face {
-    font-family: "raleway";
-    src: url(../fonts/Raleway-Regular.ttf);
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+  font-size: 16px;
+  font-weight: bolder;
+}
+body {
+  margin: 0 auto;
+  font-family: "montserrat";
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
-/* - Font-family: "Raleway"
-- Headerhöhe: 76px
-- Logofarbe: #666
-- Logofarbe in hover: #333
-- Menüfarbe: #333
-- Menüfarbe in hover: #337ab7 */
+h3 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.7rem;
+}
+.hero-section {
+  background: url(../image/bg-bike.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.hero-textbox {
+  width: 23rem;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  justify-content: center;
+  text-align: center;
+}
 
-header, nav{
-    height: 76px;
-    border-bottom: 1px solid gainsboro;
+.hero-textbox {
+  position: relative;
+  top: 37vh;
+  left: 11vw;
 }
-.logo{
-    color: #666;
-    font-size: 1.5rem;
+
+nav {
+  background-color: #00000084;
+  justify-content: space-around;
+  padding: 1rem 5rem;
+  color: #fff;
+  position: sticky;
+  top: 0;
 }
-.logo:hover{
-    color: #333;
+h1,
+.logo {
+  font-size: 3rem;
 }
-a{
-    color: #333;
-    text-decoration: none;
+.logo {
+  width: 20rem;
+  color: #fff;
 }
-a:hover{
-    color: #337ab7;
+.nav-right {
+  width: 40rem;
+  justify-content: space-evenly;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.nav-right a {
+  color: #fff;
 }
-ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding-right: 15px;
+
+.location-section {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+}
+.location-section h1 {
+  margin-bottom: 2rem;
+}
+
+.bar {
+  background-color: #000;
+  height: 10px;
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.box-photos {
+  flex-wrap: wrap;
+  gap: 5vw;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+.each-box-photos {
+  width: 400px;
+  height: 250px;
+}
+.each-box-photos :hover {
+  transition: 0.4s;
+  opacity: 0.6;
+  background-color: #000;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.section-dates {
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5rem;
+  height: 45vh;
+}
+.section-dates ul {
+  text-align: left;
+  padding-left: 20vw;
+  padding-top: 6rem;
+  list-style: none;
+  line-height: 300%;
+}
+.red {
+  color: #ff0000;
+  font-weight: 700;
+}
+.green {
+  color: #008000;
+  font-weight: 700;
 }
