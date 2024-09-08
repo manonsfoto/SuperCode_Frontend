@@ -40,6 +40,9 @@ a {
   top: 1rem;
   z-index: -1;
 }
+.img-desktop-small {
+  width: 45%;
+}
 .launch-screen a {
   position: relative;
   top: 10rem;
@@ -79,6 +82,9 @@ a {
   margin-bottom: 1rem;
   padding-top: 0.8rem;
 }
+.deco-wrapper-2 {
+  margin-bottom: 0;
+}
 h2 {
   font-size: 1rem;
   font-weight: 200;
@@ -89,16 +95,11 @@ h2 {
   color: #6c63ff;
   font-size: larger;
 }
-fieldset {
-  background-color: rgb(41, 67, 84);
-  padding: 1em;
-  padding-bottom: 1.8em;
-}
 
 h1 {
-  color: white;
-  padding: 1.2em;
+  color: #000;
   text-align: center;
+  font-size: 1.5rem;
 }
 input[type="button"] {
   color: white;
@@ -116,32 +117,4 @@ input[type="submit"] {
   width: 100%;
   height: 70px;
   word-spacing: 0.5em;
-}
-
-section input {
-  background-color: rgb(41, 67, 84);
-  height: 35px;
-  color: white;
-  margin-bottom: 20px;
-}
-::placeholder {
-  color: gainsboro;
-}
-div input {
-  width: 100%;
-}
-
-.name input {
-  width: 49.3%;
-}
-.forgot {
-  color: rgb(66, 202, 59);
-  width: 100%;
-  padding-bottom: 1em;
-  text-align: right;
-  display: block;
-}
-
-header input:hover {
-  background-color: rgb(173, 250, 106);
 }
