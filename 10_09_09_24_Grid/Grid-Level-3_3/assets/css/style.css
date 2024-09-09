@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 2px solid red;
 }
 html {
   font-family: "cormorant-garamond", "Courier New", Courier, monospace;
@@ -61,6 +60,8 @@ main {
 }
 .main-items1 {
   grid-area: e;
+  align-items: center;
+  justify-content: center;
 }
 .main-items2 {
   grid-area: g;
@@ -118,8 +119,21 @@ h3 {
 }
 p {
   font-size: 1.2rem;
+  padding-top: 0.8rem;
 }
 h2 {
   font-size: 2rem;
   text-align: center;
+}
+.main-items8 img {
+  width: 34.5rem;
+  padding-left: 1rem;
+}
+.main-items8 p {
+  padding-top: 0;
+  padding-left: 1rem;
+}
+a {
+  color: #737b80;
+  font-size: 1.6rem;
 }
