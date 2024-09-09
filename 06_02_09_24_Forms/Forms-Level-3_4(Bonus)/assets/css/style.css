@@ -34,6 +34,8 @@ a {
   width: 8rem;
   height: 2.5rem;
   border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 1.2px -1.2px 1.5px #ababab;
 }
 .img-desktop {
   position: relative;
@@ -95,26 +97,48 @@ h2 {
   color: #6c63ff;
   font-size: larger;
 }
-
+.fieldset-main {
+  align-items: flex-start;
+}
 h1 {
   color: #000;
   text-align: center;
   font-size: 1.5rem;
 }
-input[type="button"] {
-  color: white;
-  background-color: rgb(41, 67, 84);
-  font-size: 1em;
-  width: 49.35%;
-  height: 70px;
-  cursor: pointer;
+p {
+  font-size: 0.8rem;
 }
-input[type="submit"] {
-  color: white;
-  background-color: rgb(86, 204, 149);
-  font-size: 1.3em;
-  font-weight: 700;
+input {
   width: 100%;
-  height: 70px;
-  word-spacing: 0.5em;
+  height: 2rem;
+  border-radius: 10px;
+  border: 0px none;
+  padding-left: 1rem;
+}
+.checkbox {
+  width: 5%;
+}
+.longbtn {
+  color: #fff;
+  font-family: "poppins";
+  border-radius: 10px;
+  width: 14rem;
+  margin: 0;
+  padding: 0;
+}
+.barwrapper {
+  flex-direction: row;
+  gap: 5px;
+}
+.bar {
+  width: 8rem;
+  height: 2px;
+  background-color: #3f3d56;
+}
+.or {
+  color: #808080;
+}
+.a-signin {
+  text-decoration: underline;
+  color: #0000ee;
 }

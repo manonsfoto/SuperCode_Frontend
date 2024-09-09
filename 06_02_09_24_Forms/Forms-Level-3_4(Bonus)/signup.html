@@ -25,36 +25,42 @@
         </div>
 
         <h1>Sign Up</h1>
-        <section>
-          <div class="name">
-            <input
-              type="text"
-              name=""
-              id="Firstname"
-              placeholder="First Name"
-            />
-            <input type="text" name="" id="Lastname" placeholder="Last Name" />
-          </div>
-          <div>
-            <input type="email" name="" id="mail" placeholder="Email" />
-            <br />
-            <input
-              type="password"
-              name=""
-              id="Password"
-              placeholder="Password"
-            />
-          </div>
-        </section>
-        <footer>
-          <input type="submit" value="GET STARTED" /><a href="./signup.html"
-            ><input
-              type="button"
-              value="Sign Up"
-              style="background-color: rgb(86, 204, 149)"
-          /></a>
+        <main class="fieldset-main flex">
+          <label for="fullname">Full Name</label>
+          <input type="text" name="" id="fullname" placeholder="Peter Parker" />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="peterparker@explanation.com"
+          />
 
-          <a href="./index.html"><input type="button" value="Login" /></a>
+          <label for="password">Password</label>
+          <input type="password" name="" id="password" />
+          <input class="checkbox" type="checkbox" name="" id="checkbox" />
+          <p>I agree to the Terms & Conditions and Privacy Policy</p>
+        </main>
+        <footer class="flex">
+          <input
+            class="purple-btn longbtn"
+            type="submit"
+            value="Create Account"
+          />
+          <div class="barwrapper flex">
+            <div class="bar"></div>
+            <p class="or">or</p>
+            <div class="bar"></div>
+          </div>
+          <a href="">
+            <input
+              class="purple-btn longbtn"
+              type="button"
+              value="Sign Up with Google"
+          /></a>
+          <p>
+            You already have an account? <a class="a-signin" href="">Sign in</a>
+          </p>
         </footer>
       </fieldset>
     </form>
