@@ -54,7 +54,7 @@ main {
   grid-area: c;
   display: grid;
   grid-template-columns: 25% 25% 50%;
-  grid-template-rows: 5rem 10rem 19rem 1fr;
+  grid-template-rows: 6rem 10rem 19rem 1fr;
   grid-template-areas:
     "e e e"
     "g h f"
