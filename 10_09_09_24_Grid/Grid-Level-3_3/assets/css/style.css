@@ -36,6 +36,9 @@ header {
 h1::first-letter {
   font-size: 3rem;
 }
+span {
+  font-size: 3rem;
+}
 section {
   grid-area: b;
   align-content: center;
