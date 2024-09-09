@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "cormorant-garamond";
+  src: url(../fonts/CormorantGaramond-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+}
+html {
+  font-family: "cormorant-garamond", "Courier New", Courier, monospace;
+}
+body {
+  height: 100vh;
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #e9e9e0;
+  color: #333;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 7rem 2rem 1fr;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "c d";
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+header {
+  grid-area: a;
+  text-align: center;
+}
+h1::first-letter {
+  font-size: 3rem;
+}
+section {
+  grid-area: b;
+  align-content: center;
+  justify-content: space-evenly;
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;
+}
+h4 {
+  padding: 8px 0;
+}
+main {
+  height: 100%;
+  grid-area: c;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: 5rem 10rem 19rem 1fr;
+  grid-template-areas:
+    "e e e"
+    "g h f"
+    "i j f"
+    "k l f";
+}
+.main-items1 {
+  grid-area: e;
+}
+.main-items2 {
+  grid-area: g;
+}
+.main-items3 {
+  grid-area: h;
+}
+.main-items4 {
+  grid-area: i;
+}
+.main-items5 {
+  grid-area: j;
+}
+.main-items6 {
+  grid-area: k;
+}
+.main-items7 {
+  grid-area: l;
+}
+.main-items8 {
+  grid-area: f;
+}
+aside {
+  flex-direction: column;
+  row-gap: 1.5rem;
+  height: 100%;
+}
+.aside-text {
+  row-gap: 1rem;
+  text-align: center;
+}
+h5 {
+  font-size: 23px;
+  padding-top: 1.5rem;
+}
+h6 {
+  font-size: 4rem;
+  text-align: center;
+}
+.aside-item {
+  border: 5px solid #333;
+  width: 100%;
+  height: 17rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+aside img {
+  width: 100%;
+  height: 100%;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
