@@ -99,24 +99,27 @@ h2 {
 }
 .fieldset-main {
   align-items: flex-start;
+  row-gap: 5px;
 }
 h1 {
   color: #000;
   text-align: center;
   font-size: 1.5rem;
+  margin-top: 0;
+  padding-top: 0;
 }
 p {
   font-size: 0.8rem;
 }
 input {
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
   border-radius: 10px;
   border: 0px none;
   padding-left: 1rem;
 }
 .checkbox {
-  width: 5%;
+  width: 4%;
 }
 .longbtn {
   color: #fff;
@@ -128,11 +131,11 @@ input {
 }
 .barwrapper {
   flex-direction: row;
-  gap: 5px;
+  gap: 15px;
 }
 .bar {
   width: 8rem;
-  height: 2px;
+  height: 1.5px;
   background-color: #3f3d56;
 }
 .or {
@@ -141,4 +144,7 @@ input {
 .a-signin {
   text-decoration: underline;
   color: #0000ee;
+}
+footer {
+  row-gap: 8px;
 }
