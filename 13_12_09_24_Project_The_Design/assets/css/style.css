@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto-light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+html {
+  font-size: 62.5%;
+  font-family: "roboto-regular";
+}
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 5.4rem;
+}
+h2 {
+  font-size: 5.2rem;
+}
+h3 {
+  font-size: 3.8rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+h5 {
+  font-size: 2.4rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.4rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+header {
+  justify-content: space-between;
+  height: 63rem;
+}
+.logo-box {
+  width: 3.6rem;
+  position: fixed;
+}
+.logo-text {
+  margin-left: 4.5rem;
+}
+.img-rocket-box {
+  width: 3.2rem;
+  position: relative;
+  top: -8.5rem;
+  left: 40rem;
+}
+.illust-wrapper {
+  height: 63rem;
+}
+.illust-bg-box {
+  width: 79.8rem;
+}
+.illust-human-box {
+  width: 60rem;
+  position: relative;
+  top: -61rem;
+  left: 12rem;
+}
+.illust-human-box img {
+  transform: translateY(-10%);
+  animation: float 3s infinite;
+  transition: ease 0.5s;
+}
+@keyframes float {
+  0% {
+    transform: translateY(-10%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateY(10%);
+    transition: ease 0.5s;
+  }
+}
+.header-textwrapper {
+  height: 63rem;
+  width: 64rem;
+  align-self: flex-start;
+  padding: 3.8rem;
+}
+.logo-text {
+  padding-left: 1.3rem;
+  line-height: 250%;
+}
+.header-text {
+  padding-left: 13rem;
+  padding-top: 22rem;
+}
+.header-text h6 {
+  padding-top: 3rem;
+  line-height: 200%;
+}
+.header-text p {
+  padding-top: 3rem;
+  color: #ff3571;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.stn-img {
+  margin: 10rem auto 0 auto;
+}
+.imgbox-lightbulb {
+  width: 6rem;
+  position: relative;
+  top: -16rem;
+  left: 17rem;
+}
+.imgbox-icons {
+  width: 3.2rem;
+  position: relative;
+  top: 4rem;
+  left: -5rem;
+}
+.stn-about {
+  padding: 25rem 16.8rem;
+  display: grid;
+  grid-template-columns: 38rem 20rem 40rem;
+  grid-template-rows: 30rem 20rem 20rem 20rem;
+  grid-template-areas:
+    "a b b"
+    "c c c"
+    "d h e"
+    "f h g";
+}
+.stn-about-box1 {
+  grid-area: a;
+}
+.stn-about-box1 h3 {
+  width: 25rem;
+}
+.stn-about-box2 {
+  grid-area: b;
+  font-family: "roboto-light";
+  line-height: 300%;
+}
+.stn-about-box3 {
+  grid-area: c;
+  padding-left: 5rem;
+}
+.stn-about-box3 h3 {
+  width: 63rem;
+}
+.stn-about-box4 {
+  grid-area: d;
+  line-height: 300%;
+  padding-left: 5rem;
+}
+.stn-about-box5 {
+  grid-area: e;
+  line-height: 300%;
+  padding-left: 5rem;
+}
+.stn-about-box6 {
+  grid-area: f;
+  line-height: 300%;
+  padding-left: 5rem;
+}
+.stn-about-box7 {
+  grid-area: g;
+  line-height: 300%;
+  padding-left: 5rem;
+}
+.stn-challenge {
+  text-align: center;
+}
+.stn-challenge p {
+  padding: 4rem 0;
+  width: 36rem;
+  margin: 0 auto;
+}
+.stn-challenge1,
+.stn-challenge2,
+.stn-challenge3,
+.stn-challenge4 {
+  padding: 5rem 16.8rem;
+  justify-content: space-between;
+}
+.stn-challenge-imgbox {
+  width: 45rem;
+}
+
+.stn-challenge-textbox {
+  line-height: 300%;
+  width: 47rem;
+}
+.stn-challenge-textbox h2 {
+  color: #ddd;
+}
+.stn-challenge-textbox p {
+  padding-top: 2rem;
+}
+.stn-challenge-iconbox {
+  width: 4.5rem;
+  padding: 4rem 0;
+}
+
+footer {
+  height: 70rem;
+  padding: 5rem 16.8rem;
+}
+form {
+  height: 50rem;
+}
+fieldset {
+  height: 50rem;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 10rem;
+  row-gap: 3.5rem;
+  border: none;
+}
+fieldset p {
+  width: 40rem;
+}
+.footer-iconbox {
+  width: 2.8rem;
+}
+input[type="email"] {
+  width: 80rem;
+  height: 8rem;
+  color: #757575;
+  font-family: Arial;
+  text-align: center;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  filter: drop-shadow(0 0 2rem #f5f5f5);
+}
+input[type="submit"] {
+  width: 25rem;
+  height: 7rem;
+  color: #fff;
+  background-color: #ff3571;
+  font-family: Arial;
+  text-align: center;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.footer-bottom {
+  padding-top: 22rem;
+}
+.footer-bottom h6,
+header h6,
+.stn-about-box2 h6 {
+  font-weight: 200;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #ff3571 0%,
+    #f01fbc 51%,
+    #4f3aef 100%
+  );
+  transition: 0.5s;
+}
