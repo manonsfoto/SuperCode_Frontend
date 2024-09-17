@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  transition: 0.5s;
+}
+input[type="range"] {
+  width: 40rem;
+}
+
+p {
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
