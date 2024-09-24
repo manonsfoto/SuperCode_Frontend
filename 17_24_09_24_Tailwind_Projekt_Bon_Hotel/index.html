@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Welcome to Bon Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto font-mono">
+    <header
+      class="flex flex-col justify-center items-center pt-12 pb-16 gap-y-16"
+    >
+      <img src="./assets/img/logo_header.png" alt="logo" />
+      <nav class="flex gap-x-16 text-yellow-700">
+        <a
+          class="text-2xl hover:bg-amber-500 hover:text-white hover:rounded-xl"
+          href="#"
+          >Our Hotel</a
+        >
+        <a
+          class="text-2xl hover:bg-amber-500 hover:text-white hover:rounded-xl"
+          href="#"
+          >Rooms&Rates</a
+        >
+        <a
+          class="text-2xl hover:bg-amber-500 hover:text-white hover:rounded-xl"
+          href="#"
+          >Facilities</a
+        >
+        <a
+          class="text-2xl hover:bg-amber-500 hover:text-white hover:rounded-xl"
+          href="#"
+          >Contact Us</a
+        >
+        <a
+          class="text-2xl hover:bg-amber-500 hover:text-white hover:rounded-xl"
+          href="#"
+          >🔍</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section
+        class="stn__hero bg-[url(./assets/img/hero_image.png)] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center text-white"
+      >
+        <h1 class="pt-80 text-7xl text-white">WELCOME TO BON HOTEL</h1>
+        <p class="mt-5 text-2xl">Good people. Good thinking. Good feeling.</p>
+        <a
+          href="#"
+          class="mt-10 mb-44 text-2xl bg-amber-500 rounded-xl py-6 px-32"
+          >EXPLORE</a
+        >
+      </section>
+      <section
+        class="stn__facilities pt-7 px-16 pb-32 flex flex-col justify-center items-center gap-y-12 text-yellow-700"
+      >
+        <h2 class="text-5xl">Facilities</h2>
+        <div class="icon-wrapper flex gap-x-40">
+          <a href="#" class="flex flex-col justify-center items-center"
+            ><img src="./assets/img/icon_kitchen.png" alt="icon" />
+            <p class="text-center text-2xl">Kitchen</p></a
+          >
+          <a href="#" class="flex-col justify-center items-center"
+            ><img src="./assets/img/icon_pool.png" alt="icon" />
+            <p class="text-center text-2xl">Pool</p></a
+          >
+          <a href="#" class="flex-col justify-center items-center"
+            ><img src="./assets/img/icon_wifi.png" alt="icon" />
+            <p class="text-center text-2xl">Wifi</p></a
+          >
+          <a href="#" class="flex-col justify-center items-center"
+            ><img src="./assets/img/icon_fitness.png" alt="icon" />
+            <p class="text-center text-2xl">Gym</p></a
+          >
+          <a href="#" class="flex-col justify-center items-center"
+            ><img src="./assets/img/icon_taxi.png" alt="icon" />
+            <p class="text-center text-2xl">Taxi</p></a
+          >
+        </div>
+      </section>
+      <section class="stn__rooms px-16">
+        <h2 class="text-5xl text-yellow-700 text-center pb-8">Rooms & Rates</h2>
+        <article class="card-wrapper grid grid-cols-2 text-white gap-14">
+          <div
+            class="card1 bg-[url(./assets/img/standard_twin_room.png)] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center rounded-xl"
+          >
+            <h3 class="pt-72 text-4xl">Standard Twin Room</h3>
+            <a
+              href="#"
+              class="mt-11 mb-14 text-2xl bg-amber-500 rounded-xl py-6 px-12"
+              >Check Rates</a
+            >
+          </div>
+          <div
+            class="card2 bg-[url(./assets/img/standard_room.png)] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center rounded-xl"
+          >
+            <h3 class="pt-72 text-4xl">Standard Room</h3>
+            <a
+              href="#"
+              class="mt-11 mb-14 text-2xl bg-amber-500 rounded-xl py-6 px-12"
+              >Check Rates</a
+            >
+          </div>
+          <div
+            class="card3 bg-[url(./assets/img/standard_view_room.png)] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center rounded-xl"
+          >
+            <h3 class="pt-72 text-4xl">Standard View Room</h3>
+            <a
+              href="#"
+              class="mt-11 mb-14 text-2xl bg-amber-500 rounded-xl py-6 px-12"
+              >Check Rates</a
+            >
+          </div>
+          <div
+            class="card4 bg-[url(./assets/img/deluxe_room.png)] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center rounded-xl"
+          >
+            <h3 class="pt-72 text-4xl">Deluxe Room</h3>
+            <a
+              href="#"
+              class="mt-11 mb-14 text-2xl bg-amber-500 rounded-xl py-6 px-12"
+              >Check Rates</a
+            >
+          </div>
+        </article>
+      </section>
+      <section
+        class="stn__book flex flex-col items-center justify-center gap-9 mt-36 mb-28"
+      >
+        <h2 class="text-5xl text-yellow-700 pb-8">Get a room already!</h2>
+        <a
+          href="#"
+          class="text-2xl bg-amber-500 rounded-xl py-6 px-32 text-white"
+          >Book Now</a
+        >
+      </section>
+    </main>
+    <footer class="px-16 pt-14 pb-32 bg-neutral-950 grid grid-cols-3">
+      <div class="part-left flex flex-col items-start">
+        <img src="./assets/img/logo_footer.png" alt="logo" class="w-36" />
+        <div class="text-box text-white mt-16">
+          <p class="font-bold">Bon Hotels Head Office</p>
+          <p>+27 434 344 432</p>
+          <p>info@bonhotels.com</p>
+        </div>
+      </div>
+      <div class="part-middle text-2xl text-white flex flex-col gap-6">
+        <a href="#">Our Hotels</a>
+        <a href="#">Our Conferencing</a>
+        <a href="#">Our Company</a>
+        <a href="#">Hotell Design</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="part-right flex flex-col gap-6">
+        <h4 class="text-white text-3xl">Subcribe for Offers</h4>
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Email Address"
+          class="text-2xl rounded-xl py-6 w-full pl-6"
+        />
+        <input
+          class="text-2xl bg-amber-500 rounded-xl py-6 w-full text-white"
+          type="submit"
+          value="Subscribe Now"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
