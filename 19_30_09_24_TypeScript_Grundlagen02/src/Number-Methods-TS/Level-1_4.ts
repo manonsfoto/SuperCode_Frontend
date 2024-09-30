@@ -1,0 +1,41 @@
+const a = 15.16698;
+const b = 7.78714;
+const c = "12.3";
+const d = "3.14random";
+const e = "32px";
+const f = true;
+const g = false;
+const h = "321";
+const i = "SuperCode";
+
+console.log(Number(a));
+console.log(Number(b));
+console.log(Number(c));
+console.log(Number(d));
+console.log(Number(e));
+console.log(Number(f));
+console.log(Number(g));
+console.log(Number(h));
+console.log(Number(i));
+console.log("-----------------");
+
+// console.log(parseInt(a));
+// console.log(parseInt(b));
+console.log(parseInt(c));
+console.log(parseInt(d));
+console.log(parseInt(e));
+// console.log(parseInt(f));
+// console.log(parseInt(g));
+console.log(parseInt(h));
+console.log(parseInt(i));
+console.log("-----------------");
+
+// console.log(parseFloat(a));
+// console.log(parseFloat(b));
+console.log(parseFloat(c));
+console.log(parseFloat(d));
+console.log(parseFloat(e));
+// console.log(parseFloat(f));
+// console.log(parseFloat(g));
+console.log(parseFloat(h));
+console.log(parseFloat(i));
