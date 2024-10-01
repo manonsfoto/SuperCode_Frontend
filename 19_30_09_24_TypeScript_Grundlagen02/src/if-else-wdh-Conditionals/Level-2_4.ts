@@ -1,4 +1,9 @@
-function vergleich(num1: number, num2: number) {
+function vergleich() {
+  const num1: number = Math.ceil(Math.random() * 77);
+  const num2: number = Math.ceil(Math.random() * 77);
+  console.log("Num1 :" + num1);
+  console.log("Num2 :" + num2);
+
   if (num1 === num2) {
     console.log("Was für ein Zufall");
   } else if (num1 > num2) {
@@ -7,6 +12,6 @@ function vergleich(num1: number, num2: number) {
     console.log("Zweite Zahl größer");
   }
 }
-vergleich(22, 34);
-vergleich(55, 34);
-vergleich(22, 22);
+vergleich();
+vergleich();
+vergleich();
