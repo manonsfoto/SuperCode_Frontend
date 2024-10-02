@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  margin-top: 0.5rem;
   box-sizing: border-box;
 }
 html {
@@ -10,22 +11,24 @@ html {
 
 body {
   max-width: 1440px;
-  margin: 10rem auto;
+  margin: 5rem auto;
   align-items: center;
 }
 form {
-  width: 50rem;
-  border: 2px solid green;
+  width: 45rem;
+  border: 4px solid green;
   border-radius: 2rem;
   padding: 1rem;
   row-gap: 1rem;
+  margin-top: 1rem;
+  box-shadow: 14px 16px 10px 2px rgba(0, 0, 0, 0.322);
 }
 fieldset,
 .box-result {
-  background-color: rgba(128, 128, 128, 0.229);
+  background-color: rgba(245, 171, 234, 0.418);
   border-radius: 1rem;
   border: none;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 h1 {
   font-size: 3rem;
@@ -45,4 +48,27 @@ label {
 #starLabel:after {
   content: " *";
   color: red;
+}
+#inputBetrag {
+  height: 3rem;
+  width: 13rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  padding-left: 2rem;
+}
+#btn {
+  height: 3rem;
+  width: 20rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  background-color: rgb(243, 96, 218);
+}
+#resultBetrag,
+#resultBetrag2 {
+  font-weight: normal;
+}
+.ergebnis {
+  border-top: 4px solid green;
+  font-size: 2rem;
 }

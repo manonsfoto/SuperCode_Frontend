@@ -19,7 +19,11 @@ if (
   neunzehn &&
   sieben &&
   inputBetrag &&
-  btn
+  btn &&
+  resultBetrag &&
+  resultBetrag2 &&
+  starLabel &&
+  resultLabel
 ) {
   nettoZuBrutto.addEventListener("focus", () => {
     starLabel.innerHTML = "Nettobetrag (Preis ohne Mehrwertsteuer) in Euro";
@@ -30,6 +34,7 @@ if (
       "Bruttobetrag (Preis inklusiv Mehrwertsteuer) in Euro";
     resultLabel.innerHTML = "Nettobetrag";
   });
+
   const returnNumber = (): number => {
     switch (true) {
       case neunzehn.checked:
@@ -37,30 +42,29 @@ if (
         break;
       case sieben.checked:
         return 0.07;
+        break;
       default:
         return NaN;
     }
   };
 
   btn.addEventListener("click", () => {
-    const convertinputBetrag: number = Number(
+    const convertInputBetrag: number = Number(
       inputBetrag.value.replace(",", ".")
     );
-    resultBetrag.innerHTML =
-      (returnNumber() * convertinputBetrag).toFixed(2) + "€";
+    const mehrwertsteuerbetrag: number = returnNumber() * convertInputBetrag;
+
+    resultBetrag.innerHTML = mehrwertsteuerbetrag.toFixed(2) + "€";
 
     switch (true) {
       case nettoZuBrutto.checked:
         resultBetrag2.innerHTML =
-          (returnNumber() * convertinputBetrag + convertinputBetrag).toFixed(
-            2
-          ) + "€";
+          (convertInputBetrag + mehrwertsteuerbetrag).toFixed(2) + "€";
         break;
+
       case bruttoZuNetto.checked:
         resultBetrag2.innerHTML =
-          (convertinputBetrag - returnNumber() * convertinputBetrag).toFixed(
-            2
-          ) + "€";
+          (convertInputBetrag - mehrwertsteuerbetrag).toFixed(2) + "€";
         break;
     }
   });
