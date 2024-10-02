@@ -4,38 +4,22 @@ console.log("Sales Month: " + salesMonth);
 let quartal: string = " ";
 switch (salesMonth) {
   case 1:
-    quartal = "1. Quartal";
-    break;
   case 2:
-    quartal = "1. Quartal";
-    break;
   case 3:
     quartal = "1. Quartal";
     break;
   case 4:
-    quartal = "2. Quartal";
-    break;
   case 5:
-    quartal = "2. Quartal";
-    break;
   case 6:
     quartal = "2. Quartal";
     break;
   case 7:
-    quartal = "3. Quartal";
-    break;
   case 8:
-    quartal = "3. Quartal";
-    break;
   case 9:
     quartal = "3. Quartal";
     break;
   case 10:
-    quartal = "4. Quartal";
-    break;
   case 11:
-    quartal = "4. Quartal";
-    break;
   case 12:
     quartal = "4. Quartal";
     break;
