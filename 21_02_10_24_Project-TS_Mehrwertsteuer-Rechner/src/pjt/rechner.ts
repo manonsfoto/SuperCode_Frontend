@@ -46,16 +46,21 @@ if (
     const convertinputBetrag: number = Number(
       inputBetrag.value.replace(",", ".")
     );
-    resultBetrag.innerHTML = returnNumber() * convertinputBetrag + "€";
+    resultBetrag.innerHTML =
+      (returnNumber() * convertinputBetrag).toFixed(2) + "€";
 
     switch (true) {
       case nettoZuBrutto.checked:
         resultBetrag2.innerHTML =
-          returnNumber() * convertinputBetrag + convertinputBetrag + "€";
+          (returnNumber() * convertinputBetrag + convertinputBetrag).toFixed(
+            2
+          ) + "€";
         break;
       case bruttoZuNetto.checked:
         resultBetrag2.innerHTML =
-          convertinputBetrag - returnNumber() * convertinputBetrag + "€";
+          (convertinputBetrag - returnNumber() * convertinputBetrag).toFixed(
+            2
+          ) + "€";
         break;
     }
   });
