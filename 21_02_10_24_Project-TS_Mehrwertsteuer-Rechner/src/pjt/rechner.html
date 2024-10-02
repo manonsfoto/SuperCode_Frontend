@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehrwertsteuer Rechner-Minyeong</title>
+    <link rel="stylesheet" href="./rechner.css" />
+  </head>
+  <body class="flex">
+    <h1>Mehrwertsteuer-Rechner</h1>
+    <form class="flex">
+      <fieldset class="flex">
+        <p>Was soll berechnet werden?</p>
+        <div>
+          <input type="radio" name="inputWas" id="nettoZuBrutto" checked />
+          <label for="nettoZuBrutto"
+            >Mehrwertsteuer aufschlagen (Netto zu Brutto)</label
+          >
+        </div>
+        <div>
+          <input type="radio" name="inputWas" id="bruttoZuNetto" />
+          <label for="bruttoZuNetto"
+            >Mehrwertsteuer abziehen (Brutto zu Netto)</label
+          >
+        </div>
+      </fieldset>
+      <fieldset class="flex">
+        <p>Mehrwertsteuersatz</p>
+        <div>
+          <input type="radio" name="inputProzent" id="neunzehn" checked />
+          <label for="neunzehn">19%</label>
+        </div>
+        <div>
+          <input type="radio" name="inputProzent" id="sieben" />
+          <label for="sieben">7%</label>
+        </div>
+      </fieldset>
+      <fieldset class="flex">
+        <label id="starLabel" for="inputBetrag"
+          >Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</label
+        >
+        <input type="number" name="" id="inputBetrag" required />
+      </fieldset>
+      <input type="button" value="Berechnen" id="btn" />
+      <p>Ergebnis</p>
+      <div class="box-result">
+        <p>Mehrwertsteurubetrag</p>
+        <p id="resultBetrag">€</p>
+      </div>
+      <div class="box-result">
+        <p id="resultLabel">Bruttobetrag (Endpreis)</p>
+
+        <p id="resultBetrag2">€</p>
+      </div>
+    </form>
+
+    <script type="module" src="./rechner.ts"></script>
+  </body>
+</html>
