@@ -6,39 +6,43 @@
 }
 html {
   font-size: 62.5%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
+  background-color: #dceda9;
 }
 
 body {
   max-width: 1440px;
-  margin: 5rem auto;
+  min-width: 600px;
+  height: 750px;
+  margin: 0 auto;
   align-items: center;
 }
 form {
-  width: 45rem;
-  border: 4px solid green;
-  border-radius: 2rem;
+  width: 55rem;
+  background-color: #3b3bff;
+  color: #fff;
+  border-radius: 4rem;
   padding: 1rem;
   row-gap: 1rem;
   margin-top: 1rem;
-  box-shadow: 14px 16px 10px 2px rgba(0, 0, 0, 0.322);
+  box-shadow: 0px 0px 10px 9px #f950ff57;
 }
 fieldset,
 .box-result {
-  background-color: rgba(245, 171, 234, 0.418);
-  border-radius: 1rem;
-  border: none;
+  background-color: #3322297f;
+  border-radius: 3rem;
+  border: 1px solid#dceda9;
   padding: 1.5rem;
 }
 h1 {
   font-size: 3rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 label {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .flex {
   display: flex;
@@ -52,23 +56,36 @@ label {
 #inputBetrag {
   height: 3rem;
   width: 13rem;
-  font-size: 1.6rem;
-  border-radius: 1rem;
+  font-size: 2rem;
+  border-radius: 3rem;
   padding-left: 2rem;
+  font-family: monospace;
 }
 #btn {
-  height: 3rem;
+  height: 4rem;
   width: 20rem;
-  border-radius: 1rem;
-  font-size: 1.6rem;
+  border-radius: 3rem;
+  border: 1px solid#fff;
+  font-size: 2rem;
+  font-family: monospace;
+  color: #dceda9;
   font-weight: 900;
-  background-color: rgb(243, 96, 218);
+  background-color: #562f28;
+  cursor: pointer;
+}
+#btn:hover {
+  background-color: #df5ce1;
+  transition: 0.4s;
 }
 #resultBetrag,
 #resultBetrag2 {
   font-weight: normal;
 }
 .ergebnis {
-  border-top: 4px solid green;
-  font-size: 2rem;
+  border-top: 1px solid#dceda9;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+input[type="radio"] {
+  accent-color: #df5ce1;
 }

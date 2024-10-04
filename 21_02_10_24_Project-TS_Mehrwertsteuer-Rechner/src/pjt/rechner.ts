@@ -52,19 +52,19 @@ if (
     const convertInputBetrag: number = Number(
       inputBetrag.value.replace(",", ".")
     );
-    const mehrwertsteuerbetrag: number = returnNumber() * convertInputBetrag;
+    const MwStBetrag: number = returnNumber() * convertInputBetrag;
 
-    resultBetrag.innerHTML = mehrwertsteuerbetrag.toFixed(2) + "€";
+    resultBetrag.innerHTML = MwStBetrag.toFixed(2) + "€";
 
     switch (true) {
       case nettoZuBrutto.checked:
         resultBetrag2.innerHTML =
-          (convertInputBetrag + mehrwertsteuerbetrag).toFixed(2) + "€";
+          (convertInputBetrag + MwStBetrag).toFixed(2) + "€";
         break;
 
       case bruttoZuNetto.checked:
         resultBetrag2.innerHTML =
-          (convertInputBetrag - mehrwertsteuerbetrag).toFixed(2) + "€";
+          (convertInputBetrag - MwStBetrag).toFixed(2) + "€";
         break;
     }
   });
