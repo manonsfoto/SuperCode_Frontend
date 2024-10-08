@@ -8,23 +8,53 @@
   <body>
     <h1>Array-TS-Level-3_3 (mit innerHTML)</h1>
     <hr />
-    <h2>Meal Planner</h2>
-    <form>
-      <input
-        type="text"
-        name="inputMealName"
-        id="inputMealName"
-        placeholder="Enter meal name"
-      />
-      <input type="button" value="Add Meal" id="btn" />
-      <select name="selectWeek" id="selectWeek">
+    <h2 style="text-align: center">Meal Planner</h2>
+    <form
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      "
+    >
+      <select style="width: 10rem" name="selectWeek" id="selectWeek">
         <option value="0">week1</option>
         <option value="1">week2</option>
         <option value="2">week3</option>
         <option value="3">week4</option>
       </select>
-      <h3 id="resultWeek">(week)</h3>
-      <ul id="resultList"></ul>
+      <input
+        style="width: 10rem"
+        type="text"
+        name="inputMealName"
+        id="inputMealName"
+        placeholder="Enter meal name"
+      />
+
+      <label for="placeNumber"
+        >Where in the list do you want to add the new meal?</label
+      >
+      <input
+        style="width: 10rem"
+        type="number"
+        name="placeNumber"
+        id="placeNumber"
+        min="0"
+        value="0"
+      />
+      <input style="width: 10rem" type="button" value="Add Meal" id="btnAdd" />
+      <input
+        style="width: 10rem"
+        type="button"
+        value="Delete Meal"
+        id="btnDelete"
+      />
+
+      <h3 id="resultWeek"></h3>
+      <ol
+        style="border: 1px solid #191919; width: 10rem; height: 20rem"
+        id="resultList"
+      ></ol>
     </form>
     <script type="module" src="./Level-3_3(mit_innerHTML).ts"></script>
   </body>
