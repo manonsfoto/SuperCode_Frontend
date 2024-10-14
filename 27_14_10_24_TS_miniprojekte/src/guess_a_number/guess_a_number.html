@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>guess_a_number</title>
+  </head>
+  <body>
+    <h1>guess_a_number</h1>
+    <h2>Guess a number between 1 and 100!</h2>
+    <div style="border: 1px solid burlywood; width: 20rem; padding: 1rem">
+      <p>in how many rounds you think you can guess the number?</p>
+      <div id="boxRadio">
+        <label
+          ><input
+            type="radio"
+            name="inputRadio"
+            id="radioFour"
+            value="4"
+          />4</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="inputRadio"
+            id="radioFive"
+            value="5"
+          />5</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="inputRadio"
+            id="radioSix"
+            value="6"
+          />6</label
+        >
+        <label
+          ><input type="radio" name="inputRadio" id="radioCustom" value="7" />
+          Custom
+          <input
+            type="number"
+            name="inputCustomNum"
+            id="inputCustomNum"
+            min="1"
+            style="display: none"
+        /></label>
+      </div>
+      <p id="outputCount"></p>
+    </div>
+
+    <div
+      style="
+        border: 1px solid burlywood;
+        width: 20rem;
+        margin-top: 2rem;
+        padding: 1rem;
+      "
+    >
+      <input
+        type="number"
+        name="inputGuessNum"
+        id="inputGuessNum"
+        min="1"
+        max="100"
+      />
+      <input type="button" value="guess" id="btnGuess" />
+    </div>
+    <div id="outputResult"></div>
+    <script type="module" src="./guess_a_number.ts"></script>
+  </body>
+</html>
