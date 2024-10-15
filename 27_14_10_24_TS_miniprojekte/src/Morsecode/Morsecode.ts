@@ -9,7 +9,7 @@ let morseAlphabet = [
   { letter: "8", morseCode: "---.." },
   { letter: "9", morseCode: "----." },
   { letter: "0", morseCode: "-----" },
-  { letter: " ", morseCode: "    " },
+  { letter: " ", morseCode: " / " },
   { letter: "A", morseCode: ".-" },
   { letter: "B", morseCode: "-..." },
   { letter: "C", morseCode: "-.-." },
@@ -42,7 +42,13 @@ const inputText = document.querySelector("#inputText") as HTMLInputElement;
 const btn = document.querySelector("#btn") as HTMLInputElement;
 const output = document.querySelector("#output") as HTMLElement;
 
-console.log(morseAlphabet);
-console.log(inputText);
-console.log(btn);
-console.log(output);
+btn.addEventListener("click", () => {
+  output.innerHTML = "";
+  let textValue: string = inputText.value.toUpperCase().trim();
+  let letterArr: string[] = textValue.split("");
+  letterArr.forEach((letter) => {
+    const objectMorse = morseAlphabet.find((elt) => elt.letter === letter);
+
+    output.innerHTML += `${objectMorse?.morseCode}`;
+  });
+});
