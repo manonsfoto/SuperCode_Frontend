@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object-lvl2</title>
+  </head>
+  <body>
+    <h1>object-lvl2</h1>
+    <hr />
+    <section style="display: flex">
+      <div id="reihe1"><h3>Name</h3></div>
+      <div id="reihe2">
+        <h3>PreiseGramEuro</h3>
+      </div>
+      <div id="reihe3">
+        <h3>Veränderung</h3>
+      </div>
+    </section>
+    <hr />
+    <h1>Singers</h1>
+    <input type="button" value="Sort by Name" id="btnSortName" />
+    <input type="button" value="Sort by Country" id="btnSortCountry" />
+    <input type="button" value="Sort by Genre" id="btnSortGenre" />
+
+    <input
+      type="text"
+      name="inputText"
+      id="inputText"
+      placeholder="Search by Name"
+    />
+    <input type="button" value="Search" id="btnSearch" />
+    <div id="tableContainer" style="display: flex; gap: 1rem">
+      <div id="TableReihe1">
+        <h3>Name</h3>
+      </div>
+
+      <div id="TableReihe2">
+        <h3>Country</h3>
+      </div>
+
+      <div id="TableReihe3">
+        <h3>Period Active</h3>
+      </div>
+
+      <div id="TableReihe4">
+        <h3>Genre</h3>
+      </div>
+    </div>
+    <hr />
+    <script type="module" src="./object-lvl2.ts"></script>
+  </body>
+</html>
