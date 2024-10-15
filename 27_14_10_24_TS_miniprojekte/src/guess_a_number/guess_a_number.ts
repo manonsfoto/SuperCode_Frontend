@@ -16,26 +16,23 @@ const outputResult = document.querySelector("#outputResult") as HTMLElement;
 
 let randomNum: number = Math.ceil(Math.random() * 100);
 let roundMax: number;
-
+let counter: number = 0;
 // -------------------------------------------------------------------------------------------------------
 
 boxRadio.addEventListener("change", () => {
   radioButtons?.forEach((radio) => {
     if (radio.checked) {
       roundMax = Number(radio.value);
-
+      // custom value => 7
       if (roundMax === 7) {
-        // custom value => 7
         inputCustomNum.style.display = "flex";
         roundMax = Number(inputCustomNum.value);
+      } else {
+        inputCustomNum.style.display = "none";
       }
     }
   });
 });
-
-// -------------------------------------------------------------------------------------------------------
-
-let counter: number = 0;
 
 // -------------------------------------------------------------------------------------------------------
 
@@ -51,8 +48,7 @@ btnGuess.addEventListener("click", () => {
     } else {
       boxRadio.style.display = "none";
       outputCount.style.display = "flex";
-
-      counter += 1;
+      counter++;
       outputCount.innerHTML = `<p> ${counter}/ ${roundMax}</p>`;
 
       if (randomNum === guessNum) {
