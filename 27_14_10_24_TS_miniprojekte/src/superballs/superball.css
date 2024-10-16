@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+div {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 7rem;
+}
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  transform: rotate(240grad);
+}
+button:hover {
+  box-shadow: 1px 0px 20px 10px gray;
+  cursor: pointer;
+}
+#btn1 {
+  background-image: linear-gradient(
+    rgb(63, 236, 101) 50%,
+    rgb(205, 37, 205) 50%
+  );
+}
+#btn2 {
+  background-image: linear-gradient(
+    rgb(81, 10, 144) 50%,
+    rgb(239, 226, 49) 50%
+  );
+}
+#btn3 {
+  background-image: linear-gradient(rgb(0, 0, 0) 50%, rgb(250, 151, 70) 50%);
+}
+#btn4 {
+  background-image: linear-gradient(rgb(0, 59, 127) 50%, rgb(92, 255, 255) 50%);
+}
