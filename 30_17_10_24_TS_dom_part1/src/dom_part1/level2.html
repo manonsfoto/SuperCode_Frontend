@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./level2.css" />
+    <title>Dom-Elements-TS-Level-2</title>
+  </head>
+  <body>
+    <h1>Dom-Elements-TS-Level-2</h1>
+    <hr />
+    <!-- -------------------------- -->
+    <ul>
+      <div class="listContainer">
+        <li><a class="nav" id="navHome" href="#home">Home</a></li>
+        <li><a class="nav" id="navNews" href="#news">News</a></li>
+        <li><a class="nav" id="navContact" href="#contact">Contact</a></li>
+      </div>
+      <li class="nav"><a class="active" id="navChange">Change me</a></li>
+    </ul>
+    <hr />
+    <!-- -------------------------- -->
+    <div>
+      <form id="form1">
+        <label for="vorname">Vorname</label
+        ><input
+          type="text"
+          id="vorname"
+          name="vorname"
+          placeholder="Dein Name..."
+        /><label for="nachname">NachName</label
+        ><input
+          type="text"
+          id="nachname"
+          name="nachname"
+          placeholder="Dein Nachname..."
+        /><label for="land">Land</label
+        ><select id="land" name="land">
+          <option value="Australia">Australia</option>
+          <option value="Canada">Canada</option>
+          <option value="Usa">USA</option></select
+        ><input type="button" value="Submit" id="submitBtn" />
+      </form>
+    </div>
+    <hr />
+    <!-- -------------------------- -->
+    <div id="content"></div>
+
+    <script type="module" src="./level2.ts"></script>
+  </body>
+</html>
