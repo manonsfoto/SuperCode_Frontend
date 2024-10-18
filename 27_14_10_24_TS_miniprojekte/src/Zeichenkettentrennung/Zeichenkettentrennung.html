@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+    </style>
     <title>Zeichenkettentrennung</title>
   </head>
-  <body>
-    <h1>Zeichenkettentrennung</h1>
+  <body class="flex">
+    <h1>Zeichen ketten trennungs maschine</h1>
+    <form class="flex">
+      <label class="flex">
+        Zu trennende Zeichenkette
+        <input type="text" id="inputText" />
+      </label>
+      <label class="flex">
+        Trennen bei Zeichenkette
+        <input type="text" id="inputLetter" />
+      </label>
+      <div>
+        <label>
+          <input type="radio" name="choose" checked id="davorRadio" />
+          davor trennen
+        </label>
+        <label>
+          <input type="radio" name="choose" id="danachRadio" />
+          danach trennen
+        </label>
+        <button type="button">Hier clicken</button>
+      </div>
+    </form>
+    <section class="flex">
+      <h2>Ausgabe</h2>
+      <h3>Vorderer Teil</h3>
+      <p id="outputFirst"></p>
+      <h3>Hinterer Teil</h3>
+      <p id="outputLast"></p>
+    </section>
     <script type="module" src="./Zeichenkettentrennung.ts"></script>
   </body>
 </html>
