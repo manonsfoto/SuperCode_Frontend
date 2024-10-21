@@ -3,10 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+      section {
+        flex-direction: column;
+        border: 1px solid black;
+        width: 25rem;
+
+        border-radius: 3rem;
+        margin: 10rem auto;
+        padding: 3rem;
+        font-family: helvetica;
+      }
+      .icon {
+        border: 1px solid black;
+        border-radius: 0.3rem;
+        background-color: rgb(197, 255, 115);
+        width: 1.5rem;
+        height: 1.5rem;
+        text-align: center;
+      }
+    </style>
     <title>Trinkgeldrechner</title>
   </head>
   <body>
-    <h1>Trinkgeldrechner</h1>
+    <section class="flex">
+      <h1>Trinkgeldrechner</h1>
+      <label
+        >Wie hoch war die Rechnung?
+        <div class="flex">
+          <p class="icon">€</p>
+          <input type="number" id="inputNum" min="0" />
+        </div>
+      </label>
+      <label
+        >Wie viele Menschen teilen sich die Rechnung?
+        <div class="flex">
+          <p class="icon">👥</p>
+          <input type="number" id="inputPeople" min="1" />
+        </div>
+      </label>
+      <select>
+        <option value="" disabled selected>Wie war der Service?</option>
+        <option value="0.02">Schlechter Service</option>
+        <option value="0.1">Mittlerer Service</option>
+        <option value="0.2">Super Service</option>
+      </select>
+
+      <button type="button" id="btn">Berechne</button>
+      <div id="output"></div>
+    </section>
     <script type="module" src="./Trinkgeldrechner.ts"></script>
   </body>
 </html>
