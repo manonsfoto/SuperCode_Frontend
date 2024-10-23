@@ -91,7 +91,7 @@ summeZwei2(3, 5);
 // multiple2(2, 4);
 // ?=====================================================
 
-const obj1 = {
+const personInfo = {
   vorname: "Minyeong",
   nachname: "Jeong",
   alter: 33,
@@ -103,12 +103,12 @@ function logObject(obj: {}) {
   console.log(Object.keys(obj));
 }
 
-logObject(obj1);
+logObject(personInfo);
 
 const logObject2 = (obj: {}) => {
   console.log(Object.keys(obj));
 };
-logObject2(obj1);
+logObject2(personInfo);
 
 // ?=====================================================
 
@@ -142,8 +142,8 @@ const createMonster = (
   return console.log(newMonster);
 };
 
-createMonster("minyeong", "human");
-createMonster("Phlip", "human", 80);
+createMonster("Minyeong", "human");
+createMonster("Philip", "human", 80);
 createMonster("Pikachu", "pokemon", 40, 33);
 createMonster("Laichu", "pokemon", 60, 40, 70);
 
