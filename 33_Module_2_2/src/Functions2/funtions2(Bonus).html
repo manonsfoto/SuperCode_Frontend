@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-TS Idealgewichtrechner</title>
+  </head>
+  <body>
+    <h1>Project-TS Idealgewichtrechner</h1>
+
+    <form
+      style="
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        gap: 1rem;
+        border-radius: 2rem;
+        border: 1px solid black;
+        padding: 2rem;
+      "
+    >
+      <h2>Idealgewichtrechner</h2>
+      <label
+        >Körpergröße (cm)
+        <input type="number" id="inputHeight" min="1" max="300"
+      /></label>
+      <label
+        >Alter <input type="number" id="inputAge" min="1" max="200"
+      /></label>
+      <label
+        >Körperbau
+        <label
+          ><input
+            type="radio"
+            name="bodyShape"
+            value="1.1"
+            checked
+          />Breit</label
+        >
+        <label
+          ><input type="radio" name="bodyShape" value="0.9" />Schmal</label
+        ></label
+      >
+      <button type="button">Submit</button>
+      <p id="output">Dein Idealgewicht ist</p>
+    </form>
+    <script type="module" src="./funtions2(Bonus).ts"></script>
+  </body>
+</html>
