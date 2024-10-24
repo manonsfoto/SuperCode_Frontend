@@ -108,25 +108,46 @@ episode_2_S3.addActor(actor_5);
 episode_2_S3.addActor(actor_6);
 
 // !=========================================================
+// !=========================================================
+
 function printSeriesInfo(series: Series) {
+  const actorArraysOfSeries = series._episodes.map((episode) => {
+    return episode._actors;
+  });
+
+  const allActors: Actor[] = [];
+  actorArraysOfSeries.forEach((actorArr) => {
+    actorArr.forEach((actor) => {
+      allActors.push(actor);
+    });
+  });
+
+  const keineDoppeltenActorsArr: Actor[] = [];
+  allActors.forEach((actor) => {
+    if (!keineDoppeltenActorsArr.includes(actor)) {
+      keineDoppeltenActorsArr.push(actor);
+    }
+  });
+
   const seriesInfo = `
-    Title: ${series._title}
-    Description: ${series._description}
-    Start Year: ${series._startYear}
-    End Year: ${series._endYear}
-    Number of Episodes: ${series._episodes.length}
+  Title: ${series._title}
+  Description: ${series._description}
+  Start Year: ${series._startYear}
+  End Year: ${series._endYear}
+  Number of Episodes: ${series._episodes.length}
 
-    Actors:
-    `;
-  console.log(seriesInfo);
-
-  for (const episode of series._episodes) {
-    episode._actors.forEach((actor) =>
-      console.log(`- ${actor._firstName} ${actor._lastName}
+  Actors:${keineDoppeltenActorsArr
+    .map((actor) => {
+      return `- Name: ${actor._firstName} ${actor._lastName}
         - Birthday: ${actor._birthday}
-        - Gender: ${actor._gender}`)
-    );
-  }
+        - Gender: ${actor._gender}
+        `;
+    })
+    .join("")}
+  `;
+  console.log(seriesInfo);
 }
 
 printSeriesInfo(series_1);
+printSeriesInfo(series_2);
+printSeriesInfo(series_3);
