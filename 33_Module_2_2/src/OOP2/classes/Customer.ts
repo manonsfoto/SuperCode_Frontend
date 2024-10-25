@@ -1,3 +1,5 @@
+import Validator from "./Validator";
+
 class Customer {
   private _name: string;
   private _email: string;
@@ -37,10 +39,10 @@ class Customer {
   }
 
   set email(value: string) {
-    if (value.includes("@") && value.includes(".")) {
+    if (Validator.validateEmail(value)) {
       this._email = value;
     } else {
-      console.error("Email must include an @ and .");
+      console.error("Invalid Email.");
     }
   }
 
