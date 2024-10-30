@@ -23,6 +23,8 @@ const displayTime = () => {
     .padStart(2, "0")}:${counterSeconds.toString().padStart(2, "0")}`;
 };
 
+// ===================================================================
+
 const startCount = (minutesValue: number) => {
   inputMinutes.value = "";
   if (minutesValue) {
@@ -35,9 +37,11 @@ const startCount = (minutesValue: number) => {
       if (counter === 0) {
         clearInterval(interval);
       }
-    }, 100);
+    }, 1000);
   }
 };
+
+// ===================================================================
 
 const pauseCount = () => {
   if (counter !== 0) {
@@ -47,20 +51,24 @@ const pauseCount = () => {
   }
 };
 
+// ===================================================================
+
 const resetCount = () => {
   time.textContent = "00:00";
   clearInterval(interval);
 };
+
+// ===================================================================
 
 startBtn?.addEventListener("click", () => {
   const minutes: number = Number(inputMinutes.value);
   startCount(minutes);
 });
 
-pauseBtn?.addEventListener("click", pauseCount);
-
 restartBtn?.addEventListener("click", () => {
   startCount(restartedCounter / 60);
 });
+
+pauseBtn?.addEventListener("click", pauseCount);
 
 resetBtn?.addEventListener("click", resetCount);
