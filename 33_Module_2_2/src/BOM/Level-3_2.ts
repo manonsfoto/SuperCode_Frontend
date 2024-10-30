@@ -7,43 +7,60 @@ const restartBtn = document.querySelector(
 ) as HTMLButtonElement;
 const resetBtn = document.querySelector("#reset-button") as HTMLButtonElement;
 
-startBtn.addEventListener("click", () => {
-  const minutes: number = Number(inputMinutes.value);
+// ===================================================================
+
+let counter: number = 0;
+let interval: number;
+let restartedCounter: number = 0;
+
+// ===================================================================
+const displayTime = () => {
+  let counterMinutes: number = Math.floor(counter / 60);
+  let counterSeconds: number = counter - 60 * counterMinutes;
+
+  time.textContent = `${counterMinutes
+    .toString()
+    .padStart(2, "0")}:${counterSeconds.toString().padStart(2, "0")}`;
+};
+
+const startCount = (minutesValue: number) => {
   inputMinutes.value = "";
+  if (minutesValue) {
+    counter = minutesValue * 60;
 
-  let counter: number = minutes * 60;
+    interval = setInterval(() => {
+      counter--;
+      displayTime();
 
-  const interval = setInterval(() => {
-    counter--;
-    let counterMinutes: number = Math.floor(counter / 60);
-    let counterSeconds: number = counter - 60 * counterMinutes;
+      if (counter === 0) {
+        clearInterval(interval);
+      }
+    }, 100);
+  }
+};
 
-    time.textContent = `${counterMinutes
-      .toString()
-      .padStart(2, "0")}:${counterSeconds.toString().padStart(2, "0")}`;
+const pauseCount = () => {
+  if (counter !== 0) {
+    clearInterval(interval);
+    restartedCounter = counter;
+    displayTime();
+  }
+};
 
-    if (counter === 0) {
-      clearInterval(interval);
-    }
-  }, 100);
+const resetCount = () => {
+  time.textContent = "00:00";
+  clearInterval(interval);
+};
+
+startBtn?.addEventListener("click", () => {
+  const minutes: number = Number(inputMinutes.value);
+  startCount(minutes);
 });
 
-// pauseBtn.addEventListener("click", () => {
-//   clearInterval(interval);
-//   let pausedCounter: number = counter;
-// });
+pauseBtn?.addEventListener("click", pauseCount);
 
-// restartBtn.addEventListener("click", () => {
-//   const restartedInterval = setInterval(() => {
-//     pausedCounter--;
-//     let counterMinutes: number = Math.floor(counter / 60);
-//     let counterSeconds: number = counter - 60 * counterMinutes;
+restartBtn?.addEventListener("click", () => {
+  startCount(restartedCounter / 60);
+});
 
-//     time.textContent = `${counterMinutes
-//       .toString()
-//       .padStart(2, "0")}:${counterSeconds.toString().padStart(2, "0")}`;
-//     if (counter === 0) {
-//       clearInterval(restartedInterval);
-//     }
-//   }, 100);
-// });
+resetBtn?.addEventListener("click", resetCount);
