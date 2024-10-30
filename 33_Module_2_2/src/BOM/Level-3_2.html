@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="Level-3_2.ts" defer></script>
+    <title>BOM-TS-Level-3_2</title>
+    <style>
+      #minuteCountdownBereich {
+        background-color: #dcffcc;
+        color: #baabda;
+        display: inline-block;
+        padding: 10px;
+        font-family: Geneva;
+        font-weight: bold;
+      }
+
+      input {
+        border-radius: 5px;
+        background: #9fdfcd;
+      }
+
+      button {
+        border-radius: 5px;
+        background: #d79abc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BOM-TS-Level-3_2</h1>
+
+    <div id="minuteCountdownBereich">
+      <p>Minuten Countdown:</p>
+      <div id="time">00:00</div>
+      <input id="minutes" type="text" placeholder=" Minuten übrig..." />
+      <br />
+      <button type="button" id="start-button">Start Countdown</button>
+      <br />
+      <button type="button" id="pause-button">Pause Countdown</button>
+      <br />
+      <button type="button" id="restart-button">Restart Countdown</button>
+      <br />
+      <button type="button" id="reset-button">Reset</button>
+    </div>
+  </body>
+</html>
