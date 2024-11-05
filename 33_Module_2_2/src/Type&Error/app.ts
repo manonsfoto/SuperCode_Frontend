@@ -74,7 +74,7 @@ let randomNum: number = 0;
 let lottoResults: number[] = [];
 
 const generateLottoNumber = (): number => {
-  randomNum = Math.ceil(Math.random() * 99);
+  randomNum = Math.ceil(Math.random() * 100);
 
   if (randomNum > 49) {
     throw new Error(`die Zahl ${randomNum} ist größer als 49!!!`);
@@ -89,7 +89,7 @@ for (let counter = 0; lottoResults.length < 7; counter++) {
       lottoResults.push(randomNum);
     }
   } catch (err) {
-    console.log("die Zahl ist größer als 49!!!");
+    console.log(err);
   }
 }
 console.log(lottoResults);
