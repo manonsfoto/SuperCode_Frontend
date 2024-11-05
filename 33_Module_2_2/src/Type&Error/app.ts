@@ -82,7 +82,7 @@ const generateLottoNumber = (): number => {
   return randomNum;
 };
 
-for (let counter = 0; lottoResults.length < 7; counter++) {
+while (lottoResults.length < 7) {
   try {
     generateLottoNumber();
     if (!lottoResults.includes(randomNum)) {
