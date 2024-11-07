@@ -23,12 +23,13 @@ promise_1
     displayParagraph.textContent = resp;
   })
   .then(() => {
-    promise_2.then((resp) => {
-      displayParagraph.textContent = resp;
-    });
-  })
-  .then(() => {
-    promise_3.then((resp) => {
-      displayParagraph.textContent = resp;
-    });
+    promise_2
+      .then((resp) => {
+        displayParagraph.textContent = resp;
+      })
+      .then(() => {
+        promise_3.then((resp) => {
+          displayParagraph.textContent = resp;
+        });
+      });
   });
