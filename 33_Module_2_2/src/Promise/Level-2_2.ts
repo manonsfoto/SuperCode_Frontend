@@ -29,7 +29,7 @@ generateLoremIpsum(42)
     return secondChangedArr;
   })
   .then((resp: string[]) => {
-    const thirdChangedArr = resp.filter((wort) => wort.length > 8);
+    const thirdChangedArr = resp.filter((wort) => wort.length <= 8);
     console.log(thirdChangedArr);
     return thirdChangedArr;
   })
