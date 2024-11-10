@@ -12,7 +12,7 @@ function greetingCallback(name: string) {
 
 sayHello("Minyeong", greetingCallback);
 sayHello("Philip", greetingCallback);
-sayHello("André", greetingCallback);
+sayHello("Viviana", greetingCallback);
 
 // !====================================
 // !======= Promise-TS-Level-1_4 =======
