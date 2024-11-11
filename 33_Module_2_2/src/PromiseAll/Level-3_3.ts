@@ -11,47 +11,50 @@ document.getElementById("startSimulation")?.addEventListener("click", () => {
 function order(
   customerNumber: number,
   customerDiv: HTMLDivElement
-): Promise<void> {
+): Promise<string> {
   customerDiv.textContent = `${customerNumber}. Person in der Reihe`;
   return new Promise((resolve) => {
     customerDiv.innerHTML += `<br> 📝 Bestellung aufnehmen`;
-    setTimeout(resolve, getRandomDurationInMilliseconds());
+    resolve("Bestellung aufnehmen");
   });
 }
 
-function pay(customerDiv: HTMLDivElement): Promise<void> {
+function pay(customerDiv: HTMLDivElement): Promise<string> {
   return new Promise((resolve) => {
     customerDiv.innerHTML += `<br> 💳Bezahlung durchführen`;
-    resolve();
+    resolve("Bezahlung durchführen");
   });
 }
-function makeBurger(customerDiv: HTMLDivElement): Promise<void> {
+function makeBurger(customerDiv: HTMLDivElement): Promise<string> {
   return new Promise((resolve) => {
     customerDiv.innerHTML += `<br> 🍔Bereite einen Burger vor`;
 
     setTimeout(() => {
       customerDiv.innerHTML += `<br> 🍔Burger fertig`;
-      resolve();
+      resolve("Burger fertig");
     }, getRandomDurationInMilliseconds());
   });
 }
-function makeFries(customerDiv: HTMLDivElement): Promise<void> {
+function makeFries(customerDiv: HTMLDivElement): Promise<string> {
   return new Promise((resolve) => {
     customerDiv.innerHTML += `<br> 🍟Bereite Pommes vor`;
 
     setTimeout(() => {
       customerDiv.innerHTML += `<br> 🍟Pommes fertig`;
-      resolve();
+      resolve("Pommes fertig");
     }, getRandomDurationInMilliseconds());
   });
 }
-function makeDrink(drink: string, customerDiv: HTMLDivElement): Promise<void> {
+function makeDrink(
+  drink: string,
+  customerDiv: HTMLDivElement
+): Promise<string> {
   return new Promise((resolve) => {
     customerDiv.innerHTML += `<br> 🥤Fülle ${drink} ein`;
 
     setTimeout(() => {
       customerDiv.innerHTML += `<br> 🥤${drink} fertig`;
-      resolve();
+      resolve("drink fertig"); //for Backend-developers
     }, getRandomDurationInMilliseconds());
   });
 }
