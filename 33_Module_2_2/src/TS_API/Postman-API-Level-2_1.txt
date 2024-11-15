@@ -1,0 +1,41 @@
+STAR WARS
+
+- Wie lange hat der Aufruf gedauert?
+979ms
+
+- Wieviele Planeten bekommst du als Antwort? 
+60
+
+- Wie lautet der Name des vorletzten Planeten?
+Coruscant
+
+- Wie ist das Klima (climate) des Planten Hoth?
+frozen
+
+- Wie lautet der Name des zweiten Planeten auf dieser Seite?
+
+Corellia
+
+- Wer ist die erste Person in der Antwort?
+Luke Skywalker
+
+- Rufe sein Raumschiff ab - wie heißt es?
+X-wing, Imperial shuttle
+
+- Wie lautet die Haarfarbe und die Augenfarbe der letzten Person aus der Antwort?
+hair_color: auburn, white
+eye_color: blue-gray
+
+- Wer steht dort ganz oben?
+Boba Fett
+
+- In welchen Filmen kommt die Person vor?
+    The Empire Strikes Back,
+    Return of the Jedi
+    Attack of the Clones
+
+ - Wie groß ist sie?  
+150
+
+ - Was ist ihr Heimatplanet? 
+  Alderaan   

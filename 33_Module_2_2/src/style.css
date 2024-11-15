@@ -16,6 +16,7 @@ a {
 }
 li:hover {
   background-color: #fa5647;
+  cursor: pointer;
 }
 li:hover > a {
   color: antiquewhite;
