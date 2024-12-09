@@ -1,0 +1,12 @@
+.section_animalList {
+  padding-top: 5rem;
+  gap: 2rem;
+}
+.section_animalList h1 {
+  font-size: 2rem;
+}
+.animal_container {
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

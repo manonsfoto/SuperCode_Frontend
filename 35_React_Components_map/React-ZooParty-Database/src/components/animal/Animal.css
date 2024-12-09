@@ -1,0 +1,27 @@
+.card {
+  width: 20rem;
+  height: 30rem;
+  background-color: beige;
+  box-shadow: 5px 5px gray;
+  border-radius: 1rem;
+  gap: 0.4rem;
+
+  justify-content: space-between;
+}
+.card h3 {
+  font-size: 6rem;
+  margin-bottom: 0.4rem;
+}
+.card h2 {
+  margin-bottom: 0.4rem;
+}
+.funfact {
+  background-color: rgb(157, 200, 143);
+  border-radius: 0 0 1rem 1rem;
+  width: 100%;
+  height: 14rem;
+  padding: 0 2rem;
+}
+.funfact ul li {
+  margin-bottom: 0.5rem;
+}
