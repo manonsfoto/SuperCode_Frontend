@@ -1,0 +1,12 @@
+.section_weather {
+  gap: 2rem;
+  padding-top: 5rem;
+}
+.section_weather h2 {
+  font-size: 2.5rem;
+}
+.card-wrapper {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
