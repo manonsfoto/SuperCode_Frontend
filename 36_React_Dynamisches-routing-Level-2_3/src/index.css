@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Helvetica;
+}
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  background-color: rgb(202, 202, 202);
+}
+.headline {
+  margin: 3rem auto;
+  text-align: center;
+}
+.stn-detail {
+  background-color: aqua;
+  text-align: center;
+  margin: 5rem auto;
+  width: 20rem;
+  padding: 2rem;
+  line-height: 200%;
+}
